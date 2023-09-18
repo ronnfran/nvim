@@ -12,6 +12,8 @@ return require('packer').startup(function(use)
   use { "folke/which-key.nvim" }
   use { "akinsho/toggleterm.nvim" }
   use { "nvim-tree/nvim-tree.lua" }
+  use { "windwp/nvim-autopairs"} -- Autopairs, integrates with both cmp and 
+  use { "nvim-lua/plenary.nvim"} -- Useful lua functions used by lots of 
   
 	-- Colorschemes
 	use "folke/tokyonight.nvim"
@@ -25,6 +27,9 @@ return require('packer').startup(function(use)
 	use { "hrsh7th/cmp-nvim-lsp" }
 	use { "hrsh7th/cmp-nvim-lua"}
 
+  -- Snippets
+  use { "L3MON4D3/LuaSnip" } -- snippet engine
+  use { "rafamadriz/friendly-snippets" } -- friendly snippets
 	-- Lsp
 	use { "neovim/nvim-lspconfig"} -- enable LSP
 	use { "williamboman/mason.nvim"} -- simple to use language server installer
